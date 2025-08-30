@@ -6,3 +6,27 @@
     justify-content: center;
 }
 
+@utility globewrapper {
+    width: 6rem;
+    aspect-ratio: 1;
+}
+
+@utility globe {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url('earth.jpg');
+    background-repeat: repeat-x;
+    background-size: 10rem auto;
+    box-shadow: inset 0 0 1rem #888, 0 0 1rem;
+    animation: globeAnim 10s linear infinite;
+}
+
+@keyframes globeAnim {
+    0% {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: 1000% center;
+    }
+}
